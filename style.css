@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FLEXBOX STYLES */
+
+
+body{
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    font-weight: 400;
+}
+.flex-main{
+    display: flex;
+    width: 60%;
+    height: 400px;
+    margin: 40px auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card{
+    height: 100%;
+    width: 100%;
+    border-radius: 7px 0 0 7px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.card-textarea{
+    margin-bottom: 25px;
+    color: #fff;
+}
+.card-textarea h2{
+    font-family: Big Shoulders Display;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: hsl(0, 0%, 95%);
+}
+.card-textarea p{
+  color:hsla(0, 0%, 100%, 0.75);
+  line-height: 22px;
+}
+.card-btn{
+    padding: 10px 16px;
+    background-color: inherit;
+    border: 1px solid hsl(0, 0%, 95%);
+    border-radius: 20px;
+    color: hsl(0, 0%, 95%);
+    font-size: 12px;
+}
+.btn-container{
+    position: relative;
+}
+.fa-solid{
+    position: absolute;
+    z-index: 1;
+    right: 55%;
+    bottom: -7px;
+    color: hsl(0, 0%, 95%);
+}
+.card1{
+    background-color: hsl(31, 77%, 52%);   
+}
+.card2{
+    background-color: hsl(184, 100%, 22%);
+    border-radius: 0;
+}
+.card3{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 7px 7px 0;
+}
+
+
+/* GRID STYLES */
+
+.grid-main{
+   
+    height: 100vh;
+    width: 100%;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 750px;
+    margin: 5% auto;
+    height: 400px;
+    
+
+}
+.grid-container > div{
+    padding: 15%;
+}
+.item1{
+    background-color: rgb(198, 183, 211);
+    width: 250px;
+    border-radius: 7px 0 0 7px;
+}
+.item2{
+    background-color: rgb(254, 69, 52);
+    width: 250px;
+    border-radius: 0 ;
+}
+.item3{
+    background-color: rgb(6, 52, 135);
+    width: 250px;
+    border-radius: 0 7px 7px 0;
+}
